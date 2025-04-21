@@ -1,8 +1,27 @@
-# Guia Interativo: Manipulação do DOM com JavaScript
+# 🧠 Guia Interativo de Manipulação do DOM com JavaScript
 
-Este repositório contém um guia prático e interativo para aprender como manipular o DOM utilizando JavaScript puro.
+Este repositório é um material de estudo pessoal criado por [Arthur do Couto](https://github.com/Arthur-Couto), com o objetivo de aprofundar e organizar os conhecimentos sobre **manipulação do DOM em JavaScript puro**.
 
-## 📖 Conteúdo
+Você pode visualizar o conteúdo como um site de documentação acessando:
+
+🔗 **[guia-dom-javascript (GitHub Pages)](https://arthur-couto.github.io/guia-dom-javascript/)**
+
+---
+
+## 📚 O que você vai encontrar
+
+- ✅ Explicação clara sobre `innerHTML`, `textContent` e `value`
+- ✅ Uso da `classList` para manipular classes
+- ✅ Conversão de valores do DOM em números
+- ✅ Manipulação de eventos com `addEventListener`
+- ✅ Criação, inserção, substituição e remoção de elementos
+- ✅ Diferenças entre `innerHTML` e `createElement`
+- ✅ Delegação de eventos
+- ✅ Exemplo prático interativo
+
+---
+
+## 📂 Estrutura do Projeto
 
 1. [innerHTML, textContent, value](#1-innerhtml-textcontent-e-value)
 2. [classList](#2-classlist)
