@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exemplo DOM</title>
+</head>
+<body>
+  <input type="number" id="num1" placeholder="Digite um número">
+  <input type="number" id="num2" placeholder="Digite outro número">
+  <button id="somar">Somar</button>
+  <p id="resultado"></p>
+
+  <script>
+    const botao = document.getElementById("somar");
+    botao.addEventListener("click", () => {
+      const n1 = Number(document.getElementById("num1").value);
+      const n2 = Number(document.getElementById("num2").value);
+      const resultado = document.getElementById("resultado");
+      resultado.textContent = "Resultado: " + (n1 + n2);
+    });
+  </script>
+</body>
+</html>

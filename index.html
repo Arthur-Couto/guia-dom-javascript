@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulação do DOM com JavaScript</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Manipulação do DOM com JavaScript</h1>
+    <p>Guia de estudo interativo</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#1">1. innerHTML, textContent e value</a></li>
+      <li><a href="#2">2. classList</a></li>
+      <li><a href="#3">3. Conversão de valores</a></li>
+      <li><a href="#4">4. Eventos com addEventListener</a></li>
+      <li><a href="#5">5. Criação de elementos</a></li>
+      <li><a href="#6">6. Remoção e substituição</a></li>
+      <li><a href="#7">7. innerHTML vs createElement</a></li>
+      <li><a href="#8">8. Delegação de eventos</a></li>
+      <li><a href="exemplos/soma.html">🧪 Ver exemplo prático</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="1">
+      <h2>1. innerHTML, textContent e value</h2>
+      <pre><code>element.innerHTML = "&lt;strong&gt;Olá!&lt;/strong&gt;";
+element.textContent = "Olá!";
+let valor = document.getElementById("campo").value;</code></pre>
+    </section>
+
+    <section id="2">
+      <h2>2. classList</h2>
+      <pre><code>element.classList.add("ativo");
+element.classList.remove("inativo");
+element.classList.toggle("oculto");</code></pre>
+    </section>
+
+    <section id="3">
+      <h2>3. Conversão de valores</h2>
+      <pre><code>let num = Number(input.value);
+let num = +input.value;</code></pre>
+    </section>
+
+    <section id="4">
+      <h2>4. Eventos com addEventListener</h2>
+      <pre><code>botao.addEventListener("click", () =&gt; {
+  alert("Clicado!");
+});</code></pre>
+    </section>
+
+    <section id="5">
+      <h2>5. Criação de elementos</h2>
+      <pre><code>let novo = document.createElement("p");
+novo.textContent = "Texto novo!";
+document.body.appendChild(novo);</code></pre>
+    </section>
+
+    <section id="6">
+      <h2>6. Remoção e substituição</h2>
+      <pre><code>pai.removeChild(filho);
+pai.replaceChild(novoElemento, antigoElemento);</code></pre>
+    </section>
+
+    <section id="7">
+      <h2>7. innerHTML vs createElement</h2>
+      <p><strong>innerHTML</strong> é mais rápido, mas menos seguro (XSS).<br>
+      <strong>createElement</strong> é mais seguro e recomendado.</p>
+    </section>
+
+    <section id="8">
+      <h2>8. Delegação de eventos</h2>
+      <pre><code>lista.addEventListener("click", (e) =&gt; {
+  if (e.target.tagName === "LI") {
+    alert("Item: " + e.target.textContent);
+  }
+});</code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com 💻 por Arthur do Couto</p>
+  </footer>
+</body>
+</html>
